@@ -1,3 +1,7 @@
+let img;
+function preload() {
+  img = loadImage('./worldsfair1.png');
+}
 
 let clr = 'red';
 let clr_input;
@@ -21,7 +25,9 @@ function setup() {
 }
 
 function draw() {
- 
+  
+  image(img, mouseX, mouseY);
+
   stroke('red');
   line(random(width), random(height), random(width), random(height));
   //on button press
